@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Calling Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- profile sidebar -->
+    <div class="sidebar-open sidebar-responsive" id="responsiveSidebar">
+      <section class="profile-sidebar open" id="profile-sidebar">
+        <div class="profile-sidebar__inner">
+          <div class="profile-sidebar__top">
+            <div class="text-center">
+              <a href="./dashboard.html">
+                <img src="images/healthassure-logo.png" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+          <!-- <div class="profile-sidebar__profile">
+                        <div class="img-box">
+                            <img src="images/profileLogo.jpg" class="img-fluid">
+                        </div>
+                        <h4 class="profile-name">Dr. Darren Elder</h4>
+                        <p class="profile-details">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                </div> -->
+          <div class="profile-sidebar__links">
+            <div class="accordion" id="accordionSidebarMenu">
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnboardId" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fa-solid fa-arrows-spin me-3"></i><span>Onboard Dashboard</span>
+                </button>
+                
+                <ul id="collapseOnboardId" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="./calling-dashboard.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Welcome Calling Dashboard
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRenewalId" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Renewal</span>
+                </button>
+                
+                <ul id="collapseRenewalId" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Sub Menu 1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Sub Menu 2
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Sub Menu 3
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId3" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Administrator</span>
+                </button>
+                
+                <ul id="collapseMenuId3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="./add-user.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Add User</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./master-data-management.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Master Data management
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId4" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Menu 4</span>
+                </button>
+                
+                <ul id="collapseMenuId4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Sub Menu 1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Sub Menu 2
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Sub Menu 3
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- right section -->
+      <section class="right-section profile-right-section">
+        <div class="profile-container">
+          <div class="profile-container__header">
+            <div class="mobile-view">
+              <i class="fa-solid fa-bars toggleNavMenu" onclick="toggleMenu()"></i>
+              <img src="images/healthassure-logo.png" class="img-fluid" />
+            </div>
+            <div class="dropdown profile-dropdown">
+              <div class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./images/profileLogo.jpg" alt="">
+              </div>
+            
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item mt-2" href="#">
+                    <i class="fa-solid fa-user me-3"></i>
+                    <span>Profile Setting</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-solid fa-right-from-bracket me-3"></i>
+                    Logout
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="card">
+                <div class="card-body">
+
+                    <ul class="nav nav-pills mb-4" role="tablist">
+                        <li class="nav-item me-4" role="presentation">
+                          <button class="nav-link active" id="pills-upcoming-tab" data-bs-toggle="pill" data-bs-target="#pills-upcoming" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Upcoming</button>
+                        </li>
+                        <!-- <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-date-tab" data-bs-toggle="pill" data-bs-target="#pills-date" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Date</button>
+                        </li> -->
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="pills-upcoming" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-4">
+                                        <label class="form-label">Client Name</label>
+                                        <select class="form-select">
+                                            <option disabled="" selected="">Select Client</option>
+                                            <option>Client 1</option>
+                                            <option>Client 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-4">
+                                        <label class="form-label">Plan Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-4">
+                                        <label class="form-label">Email Id</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-4">
+                                        <label class="form-label">Phone No</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                  
+                                  <input placeholder="From" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                                  
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                  <input placeholder="To" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary mt-2"> Search </button>
+                                    <button type="submit" class="btn btn-outline-primary mt-2"> Clear </button>
+                                </div>
+                            </div>
+
+                            <div class="table-responsive mt-5">
+                              <table class="form-table table calling-table">
+                                  <thead>
+                                    <tr>
+                                      <th>Sl No</th>
+                                      <th>Client Name </th>
+                                      <th>Member Name</th>
+                                      <th>Plan Name </th>
+                                      <th>Created Date</th>
+                                      <th>Mobile</th>
+                                      <th></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>
+                                        West Retail
+                                      </td>
+                                      <td>
+                                        Himnasu
+                                      </td>
+                                      
+                                      <td>
+                                        Plan Name 1
+                                      </td>
+                                      <td>
+                                        18 Oct 2019
+                                      </td>
+                                      <td>072636323263</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle open" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                              </button>
+                                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvaslanguage">Edit</button></li>
+                                              </ul>
+
+                                          </div>
+                                      </td>
+                                  
+                                    </tr>
+                                    <tr>
+                                      <td>2</td>
+                                      <td>
+                                        West Retail
+                                      </td>
+                                      <td>
+                                        Astasambhu
+                                      </td>
+                                      
+                                      <td>
+                                        Plan Name 1
+                                      </td>
+                                      <td>
+                                        18 Oct 2019
+                                      </td>
+                                      <td>072636323263</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle open" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                              </button>
+                                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvaslanguage">Edit</button></li>
+                                              </ul>
+
+                                          </div>
+                                      </td>
+                                  
+                                    </tr>
+                                    <tr>
+                                      <td>3</td>
+                                      <td>
+                                        West Retail
+                                      </td>
+                                      <td>
+                                        Swarnim
+                                      </td>
+                                      
+                                      <td>
+                                        Plan Name 1
+                                      </td>
+                                      <td>
+                                        18 Oct 2019
+                                      </td>
+                                      <td>072636323263</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle open" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                              </button>
+                                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvaslanguage">Edit</button></li>
+                                              </ul>
+
+                                          </div>
+                                      </td>
+                                  
+                                    </tr>
+                                    <tr>
+                                      <td>4</td>
+                                      <td>
+                                        West Retail
+                                      </td>
+                                      <td>
+                                        Pravin
+                                      </td>
+                                      
+                                      <td>
+                                        Plan Name 1
+                                      </td>
+                                      <td>
+                                        18 Oct 2019
+                                      </td>
+                                      <td>072636323263</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle open" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                              </button>
+                                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvaslanguage">Edit</button></li>
+                                              </ul>
+
+                                          </div>
+                                      </td>
+                                  
+                                    </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                            <!-- <div class="card mt-5 custom-card" style="background-color: #fcecec;">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <ul>
+                                      <li>
+                                        <b>Client Name</b> : <span>West Retail</span>
+                                      </li>
+                                      <li>
+                                        <b>Gender</b> : <span>Male</span>
+                                      </li>
+                                      <li>
+                                        <b>Created Date</b> : <span>18 Oct 2019</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <ul>
+                                      <li>
+                                        <b>Member Name</b> : <span>Astasambhu Mohanty</span>
+                                      </li>
+                                      <li>
+                                        <b>MemberPlanId</b> : <span>2323</span>
+                                      </li>
+                                      <li>
+                                        <b>Status</b> : <span>Active</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <ul>
+                                      <li>
+                                        <b>MailId</b> : <span>jshhdds@gmail.com</span>
+                                      </li>
+                                      <li>
+                                        <b>PlanName</b> : <span>Plan 1</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <ul>
+                                      <li>
+                                        <b>Mobile</b> : <span>072636323263</span>
+                                      </li>
+                                      <li>
+                                        <b>Date Of Birth</b> : <span>12 aug 2020</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div> -->
+                            <!-- <div class="card mt-5 custom-card" style="background-color: #fcecec;">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-3">
+                                    <ul>
+                                      <li>
+                                        <b>Client Name</b> : <span>West Retail</span>
+                                      </li>
+                                      <li>
+                                        <b>Gender</b> : <span>Male</span>
+                                      </li>
+                                      <li>
+                                        <b>Created Date</b> : <span>18 Oct 2019</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <ul>
+                                      <li>
+                                        <b>Member Name</b> : <span>Astasambhu Mohanty</span>
+                                      </li>
+                                      <li>
+                                        <b>MemberPlanId</b> : <span>2323</span>
+                                      </li>
+                                      <li>
+                                        <b>Status</b> : <span>Active</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <ul>
+                                      <li>
+                                        <b>MailId</b> : <span>jshhdds@gmail.com</span>
+                                      </li>
+                                      <li>
+                                        <b>PlanName</b> : <span>Plan 1</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <ul>
+                                      <li>
+                                        <b>Mobile</b> : <span>072636323263</span>
+                                      </li>
+                                      <li>
+                                        <b>Date Of Birth</b> : <span>12 aug 2020</span>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div> -->
+                        </div>
+
+                        <!-- <div class="tab-pane fade" id="pills-date" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <h3>iwejsjdsdsdsdsd</h3>
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap-tagsinput.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

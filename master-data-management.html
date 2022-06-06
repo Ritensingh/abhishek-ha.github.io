@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master Data Management</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- profile sidebar -->
+    <div class="sidebar-open sidebar-responsive" id="responsiveSidebar">
+      <section class="profile-sidebar open" id="profile-sidebar">
+        <div class="profile-sidebar__inner">
+          <div class="profile-sidebar__top">
+            <div class="text-center">
+                <a href="./dashboard.html">
+                    <img src="images/healthassure-logo.png" class="img-fluid" />
+                </a>
+            </div>
+          </div>
+
+          <div class="profile-sidebar__links">
+            <div class="accordion" id="accordionSidebarMenu">
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnboardId" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fa-solid fa-arrows-spin me-3"></i><span>Onboard Dashboard</span>
+                </button>
+                
+                <ul id="collapseOnboardId" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="./calling-dashboard.html">
+                        <i class="fa-solid fa-hand-point-right me-3"></i>
+                        Welcome Calling Dashboard
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRenewalId" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Renewal</span>
+                </button>
+                
+                <ul id="collapseRenewalId" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                        <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Sub Menu 1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Sub Menu 2
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Sub Menu 3
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId3" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Administrator</span>
+                </button>
+                
+                <ul id="collapseMenuId3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="./add-user.html">
+                        <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Add User</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./master-data-management.html">
+                        <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Master Data management
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId4" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Menu 4</span>
+                </button>
+                
+                <ul id="collapseMenuId4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                        <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Sub Menu 1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Sub Menu 2
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                        <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Sub Menu 3
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- right section -->
+      <section class="right-section profile-right-section">
+        <div class="profile-container">
+          <div class="profile-container__header">
+            <div class="mobile-view">
+              <i class="fa-solid fa-bars toggleNavMenu" onclick="toggleMenu()"></i>
+              <img src="images/healthassure-logo.png" class="img-fluid" />
+            </div>
+            <div class="dropdown profile-dropdown">
+              <div class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./images/profileLogo.jpg" alt="">
+              </div>
+            
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item mt-2" href="#">
+                    <i class="fa-solid fa-user me-3"></i>
+                    <span>Profile Setting</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-solid fa-right-from-bracket me-3"></i>
+                    Logout
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="container-fluid">
+           
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Patient Appoinment</h4>
+                    <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-language" type="button" role="tab" aria-controls="pills-language" aria-selected="true">Language</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-city" type="button" role="tab" aria-controls="pills-city" aria-selected="false">City</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" id="pills-tabContent">
+                        
+                        <div class="tab-pane fade active show" id="pills-language" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 mb-3">
+                                    <input type="text" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="col-xs-12 col-md-4 mb-3">
+                                    <input type="text" class="form-control" placeholder="User Name">
+                                </div>
+                                <div class="col-xs-12 col-md-4 mb-3">
+                                    <input type="text" class="form-control" placeholder="Case Type">
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <button type="submit" class="btn btn-primary mt-3"> Search </button>
+                                    <button type="submit" class="btn btn-outline-primary mt-3"> Clear </button>
+                                </div>
+                                <!-- <div class="col-xs-12 col-md-3 mb-3">
+                                    <input placeholder="From" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+                                </div>
+                                
+                                <div class="col-xs-12 col-md-3 mb-3">
+                                    <input placeholder="To" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+                                </div> -->
+                
+                            </div>
+                            <div class="add_doctor_form my-4">
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <h2>
+                                      LIST
+                                  </h2>
+                
+                                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvaslanguage" aria-controls="offcanvasRight">Add Record</button>
+                                </div>
+                
+                                <div class="offcanvas add_doctor_popup offcanvas-end" tabindex="-1" id="offcanvaslanguage" aria-labelledby="offcanvasRightLabel" style="visibility: hidden;" aria-hidden="true">
+                                  <div class="offcanvas-header">
+                                   
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body">
+                                    <form>
+                                      <!-- Basic Information -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Basic Information</h4>
+                                              <div class="row">
+                                                  <div class="col-md-12 mb-4">
+                                                      <div class="upload-profile-pic">
+                                                          <div class="img-box">
+                                                              <img src="images/profileLogo.jpg" class="img-fluid">
+                                                          </div>
+                                                          <div class="upload-profile-pic__btn">
+                                                              <label>
+                                                                  <input type="file" name="" hidden="">
+                                                                  <span><i class="fa fa-upload"></i> Upload Photo</span>
+                                                              </label>
+                                                              <p class="form-text">Allowed JPG, GIF or PNG. Max size of 2MB</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Username <span class="text-danger">*</span></label>
+                                                          <input type="text" class="form-control" placeholder="Enter Username">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Email <span class="text-danger">*</span></label>
+                                                          <input type="email" class="form-control" placeholder="Enter Email">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">First Name <span class="text-danger">*</span></label>
+                                                          <input type="text" class="form-control" placeholder="Enter First Name">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Last Name <span class="text-danger">*</span></label>
+                                                          <input type="text" class="form-control" placeholder="Enter Last Name">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Phone Number</label>
+                                                          <input type="number" class="form-control" placeholder="Enter Phone Number">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Gender</label>
+                                                          <select class="form-select">
+                                                              <option disabled="" selected="">Select</option>
+                                                              <option>Male</option>
+                                                              <option>Female</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Date of Birth</label>
+                                                          <input type="date" class="form-control">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Language</label>
+                                                          <input type="text" class="form-control">
+                                                      </div>
+                                                  </div>
+                                                  
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- About Me -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">About Me</h4>
+                                              <div class="row">
+                                                  <div class="col-md-12">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Biography</label>
+                                                          <textarea class="form-control" rows="5" placeholder="Enter your Biography"></textarea>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Clinic Info -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Clinic Info</h4>
+                                              <div class="row">
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Clinic Name</label>
+                                                          <input type="text" name="" class="form-control" placeholder="Enter Clinic Name">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Clinic Address</label>
+                                                          <input type="text" name="" class="form-control" placeholder="Enter Clinic Address">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-12">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Clinic images</label>
+                                                          <div class="clinic-images">
+                                                              <div class="upload-box">
+                                                                  <label>
+                                                                      <input type="file" name="" hidden="">
+                                                                      <span>Click to upload multiple images</span> 
+                                                                  </label>
+                                                              </div>
+                                                              <div class="clinic-images__list">
+                                                                  <ul class="list-unstyled mb-0">
+                                                                      <li>
+                                                                          <div class="img-box">
+                                                                              <img src="images/feature-01.jpg" class="img-fluid">
+                                                                          </div>
+                                                                          <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
+                                                                      </li>
+                                                                      <li>
+                                                                          <div class="img-box">
+                                                                              <img src="images/feature-02.jpg" class="img-fluid">
+                                                                          </div>
+                                                                          <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
+                                                                      </li>
+                                                                  </ul>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Contact Details -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Contact Details</h4>
+                                              <div class="row">
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Address Line 1</label>
+                                                          <input type="text" class="form-control" placeholder="Enter Address">
+                                                      </div>
+                                                  </div>
+                                                  
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">City</label>
+                                                          <select class="form-select">
+                                                              <option disabled="" selected="">Select</option>
+                                                              <option>Male</option>
+                                                              <option>Female</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">State / Province</label>
+                                                          <select class="form-select">
+                                                              <option disabled="" selected="">Select</option>
+                                                              <option>Male</option>
+                                                              <option>Female</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Country</label>
+                                                          <select class="form-select">
+                                                              <option disabled="" selected="">Select</option>
+                                                              <option>Male</option>
+                                                              <option>Female</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Postal Code</label>
+                                                          <input type="text" class="form-control" placeholder="Enter Postal Code">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Pricing -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Case Type</h4>
+                                              <div class="row">
+                                                  <div class="col-md-12">
+                                                      <div class="mb-4">
+                                                          <div class="form-check">
+                                                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+                                                              <label class="form-check-label" for="exampleRadios1">
+                                                                  Case 1
+                                                              </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                              <label class="form-check-label" for="exampleRadios2">
+                                                                  Case 2
+                                                              </label>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Onboarding Category:</h4>
+                                              <div class="row">
+                                                  <div class="col-md-3 mb-1">
+                                                      
+                                                      <button class="btn btn-primary d-block w-100 mb">
+                                                          <i class="fa-solid fa-user-doctor me-2"></i>
+                                                          F2F
+                                                      </button>
+                                                  </div>
+                                                  <div class="col-md-3 mb-2">
+                                                      <button class="btn btn-primary d-block w-100">
+                                                          <i class="fa-solid fa-phone me-2"></i>
+                                                          Audio
+                                                      </button>
+                                                  </div>
+                                                  <div class="col-md-3 mb-2">
+                                                      <button class="btn btn-primary d-block w-100">
+                                                          <i class="fa-solid fa-circle-play me-2"></i>
+                                                          Video
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Services and Specialization -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Specialization</h4>
+                                              <div class="row">
+                                                  <div class="col-md-12">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Specialization</label>
+                                                          <div class="type-to-enter">
+                                                              <div class="bootstrap-tagsinput"><span class="tag label label-info">Children Care<span data-role="remove"></span></span> <span class="tag label label-info">Dental Care<span data-role="remove"></span></span> <input type="text" placeholder=""></div><div class="bootstrap-tagsinput"><span class="tag label label-info">Children Care<span data-role="remove"></span></span> <span class="tag label label-info">Dental Care<span data-role="remove"></span></span> <input type="text" placeholder=""></div><input type="text" value="Children Care,Dental Care" data-role="tagsinput" style="display: none;">
+                                                          </div>
+                                                          <div class="form-text">Note : Type &amp; Press enter to add new specialization.</div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Consulting Language </h4>
+                                              <div class="row">
+                                                  <div class="col-md-12">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Languages</label>
+                                                          <div class="type-to-enter">
+                                                              <div class="bootstrap-tagsinput"><span class="tag label label-info">Children Care<span data-role="remove"></span></span> <span class="tag label label-info">Dental Care<span data-role="remove"></span></span> <input type="text" placeholder=""></div><div class="bootstrap-tagsinput"><span class="tag label label-info">Children Care<span data-role="remove"></span></span> <span class="tag label label-info">Dental Care<span data-role="remove"></span></span> <input type="text" placeholder=""></div><input type="text" value="Children Care,Dental Care" data-role="tagsinput" style="display: none;">
+                                                          </div>
+                                                          <div class="form-text">Note : Type &amp; Press enter to add new languages.</div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Education -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Education</h4>
+                                              <div class="row">
+                                                  <div class="col-md-4">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Degree</label>
+                                                          <input type="text" name="" class="form-control" placeholder="Enter Degree">
+                                                      </div>
+                                                  </div>
+                                                  
+                                              </div>
+                                              
+                                          </div>
+                                      </div>
+                                      <!-- Experience -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Experience</h4>
+                                              <div class="row">
+                                                  <div class="col-md-4">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Experience</label>
+                                                          <input type="text" name="" class="form-control" placeholder="Experience">
+                                                      </div>
+                                                  </div>
+                                              </div>    
+                                          </div>
+                                      </div>
+                                      <!-- Awards -->
+                                      
+                
+                                      <!-- Memberships -->
+                                      
+                                      <!-- Registrations -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Registrations</h4>
+                                              <div class="row">
+                                                  <div class="col-md-4">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Registrations</label>
+                                                          <input type="text" name="" class="form-control" placeholder="Registrations">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Year</label>
+                                                          <input type="date" name="" class="form-control">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="row mt-5">
+                                                  <div class="col-md-12">
+                                                      <button class="btn btn-secondary"><i class="fa-solid fa-plus"></i> Add More</button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <button class="btn btn-primary">Save Changes</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                                  </div>
+                                </div>
+                
+                              </div>
+                            <div class="table-responsive">
+                                <table class="form-table ques-table table table-hover align-middle">
+                                    <thead>
+                                      <tr>
+                                        <th>Patient Name</th>
+                                        <th>Appt Date</th>
+                                        <!-- <th>App Type</th> -->
+                                        <th>Agencies</th>
+                                        <th>Consultant Name</th>
+                                        <th>Calling Type</th>
+                                        <!-- <th>Audio</th>
+                                        <th>Video</th> -->
+                                        <th>
+                                            Appoinment Confirmation
+                                        </th>
+                                        <th></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                            <a href="#" class="d-inline-flex align-content-center">
+                                                <div class="case-type me-3">
+                                                    <p>HC</p>
+                                                </div>
+                                                <div>
+                                                    <h4>Richard Wilson</h4>
+                                                    <p>#PT0016</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <h4>11 Nov 2019</h4>
+                                            <p>10.00 AM</p>
+                                        </td>
+                                        <!-- <td>
+                                            <h4>New Patient</h4>
+                                        </td> -->
+                                        <td>
+                                            <h4>ABC</h4>
+                                        </td>
+                                        <td>
+                                            <h4>Doctor 1</h4>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-call">
+                                                <i class="fa-solid fa-user-doctor me-2"></i>
+                                                F2F
+                                            </button>
+                                        </td>
+                                        
+                                        <td>
+                                            <button class="btn btn-cancel">Cancel</button>
+                                        </td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle open" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                  <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvaslanguage">Edit</button></li>
+                                                </ul>
+
+                                            </div>
+                                        </td>
+                                    
+                                      </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-city" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 mb-3">
+                                    <input type="text" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="col-xs-12 col-md-4 mb-3">
+                                    <input type="text" class="form-control" placeholder="User Name">
+                                </div>
+                                <div class="col-xs-12 col-md-4 mb-3">
+                                    <input type="text" class="form-control" placeholder="Case Type">
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-4">
+                                    <button type="submit" class="btn btn-primary mt-3"> Search </button>
+                                    <button type="submit" class="btn btn-outline-primary mt-3"> Clear </button>
+                                </div>
+                            </div>
+                            <div class="add_doctor_form my-4">
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <h2>LIST</h2>
+                
+                                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvascity" aria-controls="offcanvasRight">Add Record</button>
+                                </div>
+                
+                                <div class="offcanvas add_doctor_popup offcanvas-end" tabindex="-1" id="offcanvascity" aria-labelledby="offcanvasRightLabel" aria-hidden="true" style="visibility: hidden;">
+                                  <div class="offcanvas-header">
+                                    <!-- <h5 id="offcanvasRightLabel"></h5> -->
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body">
+                                    <form>
+                                      <!-- Basic Information -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Basic Information</h4>
+                                              <div class="row">
+                                                  <div class="col-md-12 mb-4">
+                                                      <div class="upload-profile-pic">
+                                                          <div class="img-box">
+                                                              <img src="images/profileLogo.jpg" class="img-fluid">
+                                                          </div>
+                                                          <div class="upload-profile-pic__btn">
+                                                              <label>
+                                                                  <input type="file" name="" hidden="">
+                                                                  <span><i class="fa fa-upload"></i> Upload Photo</span>
+                                                              </label>
+                                                              <p class="form-text">Allowed JPG, GIF or PNG. Max size of 2MB</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Username <span class="text-danger">*</span></label>
+                                                          <input type="text" class="form-control" placeholder="Enter Username">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Email <span class="text-danger">*</span></label>
+                                                          <input type="email" class="form-control" placeholder="Enter Email">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">First Name <span class="text-danger">*</span></label>
+                                                          <input type="text" class="form-control" placeholder="Enter First Name">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Last Name <span class="text-danger">*</span></label>
+                                                          <input type="text" class="form-control" placeholder="Enter Last Name">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Phone Number</label>
+                                                          <input type="number" class="form-control" placeholder="Enter Phone Number">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Gender</label>
+                                                          <select class="form-select">
+                                                              <option disabled="" selected="">Select</option>
+                                                              <option>Male</option>
+                                                              <option>Female</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Date of Birth</label>
+                                                          <input type="date" class="form-control">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Language</label>
+                                                          <input type="text" class="form-control">
+                                                      </div>
+                                                  </div>
+                                                  <!-- <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Specialist In</label>
+                                                          <input type="text" class="form-control">
+                                                      </div>
+                                                  </div> -->
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- About Me -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">About Me</h4>
+                                              <div class="row">
+                                                  <div class="col-md-12">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Biography</label>
+                                                          <textarea class="form-control" rows="5" placeholder="Enter your Biography"></textarea>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Clinic Info -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Clinic Info</h4>
+                                              <div class="row">
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Clinic Name</label>
+                                                          <input type="text" name="" class="form-control" placeholder="Enter Clinic Name">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Clinic Address</label>
+                                                          <input type="text" name="" class="form-control" placeholder="Enter Clinic Address">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-12">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Clinic images</label>
+                                                          <div class="clinic-images">
+                                                              <div class="upload-box">
+                                                                  <label>
+                                                                      <input type="file" name="" hidden="">
+                                                                      <span>Click to upload multiple images</span> 
+                                                                  </label>
+                                                              </div>
+                                                              <div class="clinic-images__list">
+                                                                  <ul class="list-unstyled mb-0">
+                                                                      <li>
+                                                                          <div class="img-box">
+                                                                              <img src="images/feature-01.jpg" class="img-fluid">
+                                                                          </div>
+                                                                          <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
+                                                                      </li>
+                                                                      <li>
+                                                                          <div class="img-box">
+                                                                              <img src="images/feature-02.jpg" class="img-fluid">
+                                                                          </div>
+                                                                          <span class="delete"><i class="fa-solid fa-trash-can"></i></span>
+                                                                      </li>
+                                                                  </ul>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Contact Details -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Contact Details</h4>
+                                              <div class="row">
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Address Line 1</label>
+                                                          <input type="text" class="form-control" placeholder="Enter Address">
+                                                      </div>
+                                                  </div>
+                                                  
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">City</label>
+                                                          <select class="form-select">
+                                                              <option disabled="" selected="">Select</option>
+                                                              <option>Male</option>
+                                                              <option>Female</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">State / Province</label>
+                                                          <select class="form-select">
+                                                              <option disabled="" selected="">Select</option>
+                                                              <option>Male</option>
+                                                              <option>Female</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Country</label>
+                                                          <select class="form-select">
+                                                              <option disabled="" selected="">Select</option>
+                                                              <option>Male</option>
+                                                              <option>Female</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Postal Code</label>
+                                                          <input type="text" class="form-control" placeholder="Enter Postal Code">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Pricing -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Case Type</h4>
+                                              <div class="row">
+                                                  <div class="col-md-12">
+                                                      <div class="mb-4">
+                                                          <div class="form-check">
+                                                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+                                                              <label class="form-check-label" for="exampleRadios1">
+                                                                  Case 1
+                                                              </label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                              <label class="form-check-label" for="exampleRadios2">
+                                                                  Case 2
+                                                              </label>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Onboarding Category:</h4>
+                                              <div class="row">
+                                                  <div class="col-md-3 mb-1">
+                                                      
+                                                      <button class="btn btn-primary d-block w-100 mb">
+                                                          <i class="fa-solid fa-user-doctor me-2"></i>
+                                                          F2F
+                                                      </button>
+                                                  </div>
+                                                  <div class="col-md-3 mb-2">
+                                                      <button class="btn btn-primary d-block w-100">
+                                                          <i class="fa-solid fa-phone me-2"></i>
+                                                          Audio
+                                                      </button>
+                                                  </div>
+                                                  <div class="col-md-3 mb-2">
+                                                      <button class="btn btn-primary d-block w-100">
+                                                          <i class="fa-solid fa-circle-play me-2"></i>
+                                                          Video
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Services and Specialization -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Specialization</h4>
+                                              <div class="row">
+                                                  <div class="col-md-12">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Specialization</label>
+                                                          <div class="type-to-enter">
+                                                              <div class="bootstrap-tagsinput"><span class="tag label label-info">Children Care<span data-role="remove"></span></span> <span class="tag label label-info">Dental Care<span data-role="remove"></span></span> <input type="text" placeholder=""></div><div class="bootstrap-tagsinput"><span class="tag label label-info">Children Care<span data-role="remove"></span></span> <span class="tag label label-info">Dental Care<span data-role="remove"></span></span> <input type="text" placeholder=""></div><input type="text" value="Children Care,Dental Care" data-role="tagsinput" style="display: none;">
+                                                          </div>
+                                                          <div class="form-text">Note : Type &amp; Press enter to add new specialization.</div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Consulting Language </h4>
+                                              <div class="row">
+                                                  <div class="col-md-12">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Languages</label>
+                                                          <div class="type-to-enter">
+                                                              <div class="bootstrap-tagsinput"><span class="tag label label-info">Children Care<span data-role="remove"></span></span> <span class="tag label label-info">Dental Care<span data-role="remove"></span></span> <input type="text" placeholder=""></div><div class="bootstrap-tagsinput"><span class="tag label label-info">Children Care<span data-role="remove"></span></span> <span class="tag label label-info">Dental Care<span data-role="remove"></span></span> <input type="text" placeholder=""></div><input type="text" value="Children Care,Dental Care" data-role="tagsinput" style="display: none;">
+                                                          </div>
+                                                          <div class="form-text">Note : Type &amp; Press enter to add new languages.</div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Education -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Education</h4>
+                                              <div class="row">
+                                                  <div class="col-md-4">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Degree</label>
+                                                          <input type="text" name="" class="form-control" placeholder="Enter Degree">
+                                                      </div>
+                                                  </div>
+                                                  
+                                              </div>
+                                              
+                                          </div>
+                                      </div>
+                                      <!-- Experience -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Experience</h4>
+                                              <div class="row">
+                                                  <div class="col-md-4">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Experience</label>
+                                                          <input type="text" name="" class="form-control" placeholder="Experience">
+                                                      </div>
+                                                  </div>
+                                              </div>    
+                                          </div>
+                                      </div>
+                                      <!-- Awards -->
+                                      
+                
+                                      <!-- Memberships -->
+                                      
+                                      <!-- Registrations -->
+                                      <div class="card mb-5">
+                                          <div class="card-body">
+                                              <h4 class="card-title">Registrations</h4>
+                                              <div class="row">
+                                                  <div class="col-md-4">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Registrations</label>
+                                                          <input type="text" name="" class="form-control" placeholder="Registrations">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-4">
+                                                      <div class="mb-4">
+                                                          <label class="form-label">Year</label>
+                                                          <input type="date" name="" class="form-control">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="row mt-5">
+                                                  <div class="col-md-12">
+                                                      <button class="btn btn-secondary"><i class="fa-solid fa-plus"></i> Add More</button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <button class="btn btn-primary">Save Changes</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                                  </div>
+                                </div>
+                
+                            </div>
+                            <div class="table-responsive">
+                                <table class="form-table ques-table table table-hover align-middle">
+                                    <thead>
+                                      <tr>
+                                        <th>Patient Name</th>
+                                        <th>Appt Date</th>
+                                        
+                                        <th>Agencies</th>
+                                        <th>Consultant Name</th>
+                                        <th>Calling Type</th>
+                                        
+                                        <th>
+                                            Appoinment Confirmation
+                                        </th>
+                                        <th></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                            <a href="#" class="d-flex align-content-center">
+                                                <div class="case-type me-3">
+                                                    <p>HC</p>
+                                                </div>
+                                                <div>
+                                                    <h4>Richard Wilson</h4>
+                                                    <p>#PT0016</p>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <h4>11 Nov 2019</h4>
+                                            <p>10.00 AM</p>
+                                        </td>
+                                       
+                                        <td>
+                                            <h4>ABC</h4>
+                                        </td>
+                                        <td>
+                                            <h4>Doctor 1</h4>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-call">
+                                                <i class="fa-solid fa-user-doctor me-2"></i>
+                                                F2F
+                                            </button>
+                                        </td>
+                                        
+                                        <td>
+                                            <!-- <button class="btn btn-accept">Accept</button> -->
+                                            <button class="btn btn-cancel">Cancel</button>
+                                        </td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle open" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                  <li><button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvascity">Edit</button></li>
+                                                  
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    
+                                      </tr>
+                                      
+                                      
+                                      
+                                      
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap-tagsinput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
